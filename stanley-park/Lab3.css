@@ -1,40 +1,11 @@
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #F0FFFF;
-    color: #33475B;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.flex-container header {
-    display: flex;
-    flex-direction: row;
-}
-.flex-container header.header-left {
-    display: flex;
-    height: 100%;
-}
-
-.flex-container header.header-right {
-    display: flex;
-
-}
-
-.intro {
-    background-color: #33475B;
-    color: #FFFFFF;
-    display: flex;
-}
-
-footer {
-        background-color: #33475B;
-    color: #FFFFFF;
-}
-
+/*
+ * Student name: Peter Na
+ * Student id: 36734671
+ */
+ 
 h1 {
-    font-size: 60px;
+    font-size: 63.5px;
+    text-align: right;
 }
 
 h2 {
@@ -48,11 +19,73 @@ h3 {
 
 p {
     font-size: 16px;
+   line-height: 25px;
 }
 
-.flex-container ul{
+ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F0FFFF;
+    color: #33475B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1000px;
+    padding-left: 10px;
+}
+
+.btn {
+    background-color: #33475B;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Header section */
+
+.flex-container header {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img {
+    height: 200px;
+    width: 200px;
+    margin: 20px 250px 20px 20px;
+    border-radius: 50%;
+}
+
+.menu li {
+    margin-top: 20px;
+}
+
+.menu .btn {
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 8px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+/* Introduction section */
+
+.intro {
+    background-color: #33475B;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.intro .intro-description {
+    margin-left: 10px;
 }
 
 .intro img {
@@ -61,30 +94,62 @@ p {
     width: 200px;
     padding: 20px;
 }
+
+.intro .btn {
+    background-color: white;
+    color: #33475B;
+}
+
+/* Images section */
+
 .images img {
     height: 350px;
     width: 450px;
     flex: 50%;
 }
 
-.btn {
-    background-color: #33475B;
-    color: white;
-    text-transform: capitalize;
-    font-size: 25px;
-    padding: 10px;
-    
+#aquarium {
+    margin-left: 16px;
 }
 
-a.btn {
-    text-decoration: none;
-    list-style-type: none;
+#beach {
+    margin-right: 10px;
 }
 
-.flex-container.footer {
-    background-color: #33475B;
-    color: white;
+/* Explore section */ 
+
+.explore {
+    padding-bottom: 50px;
 }
+
+.explore .btn {
+    text-decoration: underline;
+}
+
+/* footer section */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #33475B;
+    color: #FFFFFF;
+}
+
+footer .footer-left {
+    width: 50%;
+    padding-left: 10px;
+}
+
+footer .footer-right {
+    margin: auto;
+}
+
+footer .footer-right .btn {
+    color: #33475B;
+    background-color: white;
+    margin-right: 10px;
+}
+
 
 
 
