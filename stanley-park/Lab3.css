@@ -2,7 +2,11 @@
  * Student name: Peter Na
  * Student id: 36734671
  */
- 
+body {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
 h1 {
     font-size: 63.5px;
     text-align: right;
@@ -50,7 +54,7 @@ ul {
 
 /* Header section */
 
-.flex-container header {
+header {
     display: flex;
     flex-direction: row;
 }
