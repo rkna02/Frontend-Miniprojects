@@ -1,0 +1,39 @@
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.breadcrumbs li.location+li.location::before {
+  content: "/ ";
+}
+
+.breadcrumbs li.location+li.attribute::before {
+  content: "> ";
+  color: black;
+  background-color: white;
+  padding-top: 6px;
+  border: 1px solid white;
+}
+
+.breadcrumbs li.attribute {
+  color: white;
+  background-color: black;
+  padding-top: 6px;
+}
+
+.breadcrumbs li.attribute::after {
+  content: "x";
+  vertical-align: super;
+  color: white;
+  background-color: black;
+}
+
+.breadcrumbs li.attribute::after:hover {
+  cursor: pointer;
+  color: red;
+}
